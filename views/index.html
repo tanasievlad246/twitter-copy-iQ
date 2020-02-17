@@ -13,7 +13,7 @@
   <body>
     <!-- Header -->
     <nav class="header">
-      <div>
+      <div class="left-part-nav">
         <!-- Logo -->
         <img
           src="../assets/twitter-logo.png"
@@ -25,10 +25,10 @@
         <i class="fas fa-search" id="search-icon"></i>
         <input type="text" class="input" placeholder=" Search twitter" />
       </div>
-      <div>
+      <div class="right-part-nav">
         <!-- sign up / log in buttons -->
-        <a class="button main">Log In</a>
-        <a class="button secondary">Sign Up</a>
+        <a class="button main" style="margin-right: 15px;">Log In</a>
+        <a class="button secondary" style="margin-right: 15px;">Sign Up</a>
         <!-- Three dots buttons -->
         <a class="button more"><span class="fas fa-ellipsis-h more"></span></a>
       </div>
@@ -39,24 +39,38 @@
       <!-- Main container start -->
       <div class="content-container">
         <!-- Profile -->
-        <div>
+        <div class="profile">
           <!-- Circle profile image -->
-          <img src="../assets/profile-pic.jpg" alt="" class="profile" />
+          <img
+            src="../assets/profile-pic.jpg"
+            alt="picture of Vlad"
+            class="profile-pic"
+          />
           <!-- Cover image -->
-          <img src="" alt="" />
+          <img
+            src="../assets/nature.jpeg"
+            alt="cover picture"
+            class="cover-pic"
+          />
           <!-- Follow button -->
-          <button>Follow</button>
+          <button class="button main follow-button">Follow</button>
           <!-- Profile details -->
-          <!-- Name -->
-          <h5>Name</h5>
-          <p>@Name</p>
-          <!-- hashtag -->
-          <p>#what-i-like</p>
-          <!-- Birth-day -->
-          <p>24 June 1995</p>
-          <!-- join-day -->
-          <p>Joined 14 February 2020</p>
-          <!-- Route buttons -->
+          <div class="profile-details">
+            <!-- Name -->
+            <h5>Name</h5>
+            <p>@Name</p>
+            <!-- hashtag -->
+            <p>#what-i-like</p>
+            <!-- Birth-day -->
+            <p>24 June 1995</p>
+            <!-- join-day -->
+            <p>Joined 14 February 2020</p>
+            <!-- Route buttons -->
+            <div class="follow-details">
+              <p>Following: 2500</p>
+              <p>Followers: 1000</p>
+            </div>
+          </div>
         </div>
         <!-- End if profile -->
 

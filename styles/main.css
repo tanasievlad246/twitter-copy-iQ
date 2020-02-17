@@ -6,8 +6,11 @@ body {
   /* Variables for colors */
   --main-blue-color: #161f2b;
   --secondary-blue: #243340;
+  --deep-blue: #375e7e;
   --main-grey: #404f5f;
   --light-blue: #1aa4f1;
+  background-color: var(--main-blue-color);
+  color: white;
 }
 
 a {
@@ -49,21 +52,51 @@ a {
   align-content: center;
   height: 55px;
   background-color: var(--main-blue-color);
-  box-shadow: 0 3px var(--main-grey);
+  box-shadow: 0 1px var(--main-grey);
 }
 
 .profile {
+  margin-top: 2px;
+  margin-left: 200px;
+  height: 405px;
+  width: 600px;
+  border-left: 1px solid var(--main-grey);
+  border-right: 1px solid var(--main-grey);
+}
+
+.profile-details {
+  margin-top: 55px;
+  margin-left: 25px;
+}
+
+.follow-details p {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.profile-pic {
+  position: absolute;
+  top: 180px;
+  left: 355px;
+  border: 4px solid black;
   border-radius: 50%;
   object-fit: cover;
   width: 150px;
   height: 150px;
 }
 
+.cover-pic {
+  object-fit: cover;
+  height: 200px;
+  width: 600px;
+}
+
 #search-icon {
   color: var(--main-grey);
   position: absolute;
-  top: 18px;
-  right: 1230px;
+  top: 20px;
+  right: 1110px;
 }
 
 /* main input style */
@@ -74,20 +107,28 @@ a {
   width: 430px;
   margin-top: 10px;
   border: 0;
-  /* padding: 3px 35px; */
+  padding: 3px 35px;
+  color: white;
 }
 
 .more {
-  color: white;
   border: none !important;
   border-radius: 0px;
   width: 0px !important;
+  color: var(--deep-blue) !important;
+  font-size: 25px;
+  margin-bottom: 15px !important;
+}
+
+.follow-button {
+  padding-bottom: 20px !important;
+  background-color: var(--main-blue-color);
 }
 
 /* main button style */
 .button {
   display: block;
-  color: white;
+  /* color: ; */
   width: 90px;
   height: 20px;
   border: 1px solid var(--light-blue);
@@ -109,10 +150,23 @@ a {
 }
 
 .logo {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 30px;
   object-fit: contain;
-  top: 15px;
-  left: 130px;
+  /* top: 15px;
+  left: 130px; */
+  margin-top: 15px;
+}
+
+.left-part-nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 350px;
+}
+
+.right-part-nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 370px;
 }
