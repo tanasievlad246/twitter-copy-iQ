@@ -2,6 +2,31 @@
   margin: 0 auto;
 }
 
+body {
+  /* Variables for colors */
+  --main-blue-color: #161f2b;
+  --secondary-blue: #243340;
+  --main-grey: #404f5f;
+  --light-blue: #1aa4f1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Floats */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
@@ -18,7 +43,13 @@
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 55px;
+  background-color: var(--main-blue-color);
+  box-shadow: 0 3px var(--main-grey);
 }
 
 .profile {
@@ -26,4 +57,62 @@
   object-fit: cover;
   width: 150px;
   height: 150px;
+}
+
+#search-icon {
+  color: var(--main-grey);
+  position: absolute;
+  top: 18px;
+  right: 1230px;
+}
+
+/* main input style */
+.input {
+  background-color: var(--secondary-blue);
+  border-radius: 25px;
+  height: 30px;
+  width: 430px;
+  margin-top: 10px;
+  border: 0;
+  /* padding: 3px 35px; */
+}
+
+.more {
+  color: white;
+  border: none !important;
+  border-radius: 0px;
+  width: 0px !important;
+}
+
+/* main button style */
+.button {
+  display: block;
+  color: white;
+  width: 90px;
+  height: 20px;
+  border: 1px solid var(--light-blue);
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main {
+  color: var(--light-blue);
+}
+
+.secondary {
+  color: white;
+  background-color: var(--light-blue);
+}
+
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  object-fit: contain;
+  top: 15px;
+  left: 130px;
 }

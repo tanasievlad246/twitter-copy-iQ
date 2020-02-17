@@ -3,21 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ee2fbccbbc.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../styles/main.css" />
     <title>Twitter - the clone</title>
   </head>
   <body>
     <!-- Header -->
-    <nav style="background-color: blue;" class="header">
-      <!-- Logo -->
-      <img src="../assets/twitter-logo.png" alt="" style="width: 50px;" />
-      <!-- search bar -->
-      <input type="text" />
-      <!-- sign up / log in buttons -->
-      <button>Log In</button>
-      <button>Sign Up</button>
-      <!-- Three dots buttons -->
-      <button>...</button>
+    <nav class="header">
+      <div>
+        <!-- Logo -->
+        <img
+          src="../assets/twitter-logo.png"
+          alt=""
+          style="width: 50px;"
+          class="logo"
+        />
+        <!-- search bar -->
+        <i class="fas fa-search" id="search-icon"></i>
+        <input type="text" class="input" placeholder=" Search twitter" />
+      </div>
+      <div>
+        <!-- sign up / log in buttons -->
+        <a class="button main">Log In</a>
+        <a class="button secondary">Sign Up</a>
+        <!-- Three dots buttons -->
+        <a class="button more"><span class="fas fa-ellipsis-h more"></span></a>
+      </div>
     </nav>
     <!-- End of header -->
 
