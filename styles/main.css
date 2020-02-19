@@ -15,11 +15,20 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--light-blue);
+}
+
+ul {
+  list-style: none;
+}
+
+.padding-10 {
+  padding-right: 10px;
 }
 
 /* Floats */
 .left {
-  float: left;
+  float: left !important;
 }
 
 .right {
@@ -28,6 +37,11 @@ a {
 
 .bold {
   font-weight: bold;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .main-container {
@@ -58,8 +72,8 @@ a {
 .profile {
   margin-top: 2px;
   margin-left: 200px;
-  height: 405px;
-  width: 600px;
+  height: 433px;
+  width: 37.5em;
   border-left: 1px solid var(--main-grey);
   border-right: 1px solid var(--main-grey);
 }
@@ -70,7 +84,6 @@ a {
 }
 
 .follow-details p {
-  float: left;
   margin-right: 5px;
   margin-top: 5px;
 }
@@ -79,7 +92,7 @@ a {
   position: absolute;
   top: 180px;
   left: 355px;
-  border: 4px solid black;
+  border: 4px solid var(--main-blue-color);
   border-radius: 50%;
   object-fit: cover;
   width: 150px;
@@ -92,11 +105,35 @@ a {
   width: 600px;
 }
 
+.profile-toggle {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  right: 65px;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+}
+
+.profile-toggle li {
+  padding: 10px;
+  width: 100%;
+}
+
+.profile-toggle li:hover {
+  background-color: var(--main-grey);
+  border-bottom: 2px solid var(--light-blue);
+}
+
 #search-icon {
   color: var(--main-grey);
   position: absolute;
   top: 20px;
-  right: 1110px;
+  right: 1090px;
 }
 
 /* main input style */
@@ -121,8 +158,12 @@ a {
 }
 
 .follow-button {
-  padding-bottom: 20px !important;
+  padding: 10px 5px !important;
+  text-align: center;
+  height: auto !important;
   background-color: var(--main-blue-color);
+  margin-top: 5px !important;
+  margin-right: 10px;
 }
 
 /* main button style */
@@ -169,4 +210,60 @@ a {
   display: flex;
   flex-direction: row;
   margin-right: 370px;
+}
+
+.tweet {
+  border: 1px solid var(--main-grey);
+  width: 600px;
+  height: 100%;
+  position: relative;
+  left: 100px;
+}
+
+.tweet img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.tweet-identifiers {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  margin-top: 45px;
+  margin-left: 62px;
+}
+
+.tweet-identifiers > p {
+  margin: 0 auto;
+}
+
+.tweet-content {
+  display: block;
+  margin-left: 65px;
+  text-align: left;
+}
+
+.tweet ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: -10px;
+  margin-right: 55px;
+}
+
+.tweet ul li {
+  padding: 25px;
+}
+
+.tweet ul li i {
+  padding: 5px;
 }

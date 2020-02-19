@@ -53,22 +53,33 @@
             class="cover-pic"
           />
           <!-- Follow button -->
-          <button class="button main follow-button">Follow</button>
+          <button class="button main follow-button right space-right">
+            Follow
+          </button>
           <!-- Profile details -->
-          <div class="profile-details">
+          <div class="profile-details" style="margin-top: 80px;">
             <!-- Name -->
             <h5>Name</h5>
             <p>@Name</p>
             <!-- hashtag -->
-            <p>#what-i-like</p>
-            <!-- Birth-day -->
-            <p>24 June 1995</p>
-            <!-- join-day -->
-            <p>Joined 14 February 2020</p>
-            <!-- Route buttons -->
-            <div class="follow-details">
-              <p>Following: 2500</p>
+            <p><a href="#">#what-i-like</a></p>
+            <div>
+              <!-- Birth-day -->
+              <p class="left padding-10">24 June 1995</p>
+              <!-- join-day -->
+              <p>Joined 14 February 2020</p>
+            </div>
+            <div>
+              <p class="left padding-10">Following: 2500</p>
               <p>Followers: 1000</p>
+            </div>
+            <div>
+              <ul class="profile-toggle">
+                <li>Tweets</li>
+                <li>Tweets and Replies</li>
+                <li>Media</li>
+                <li>Likes</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -78,13 +89,28 @@
         <div>
           <!-- Each tweet one after other -->
           <div class="tweet">
-            <p>Name @name - date of post</p>
-            <p>Content of the post</p>
+            <div class="content">
+              <img src="../assets/profile-pic.jpg" alt="profile picture" />
+              <div class="tweet-identifiers">
+                <p>Name</p>
+                <p>@name</p>
+                <p>- 24 June 2020</p>
+              </div>
+            </div>
+            <p class="tweet-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
             <ul>
-              <li>Comments</li>
-              <li>Share</li>
-              <li>Heart</li>
-              <li>Send</li>
+              <li><i class="far fa-comment"></i>246</li>
+              <li><i class="fas fa-retweet"></i>6</li>
+              <li><i class="far fa-heart"></i>24</li>
+              <li><i class="far fa-share-square"></i></li>
             </ul>
           </div>
         </div>
