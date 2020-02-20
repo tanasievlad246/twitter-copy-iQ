@@ -17,24 +17,36 @@
   <body>
     <!-- Header -->
     <nav class="header">
-      <div class="left-part-nav">
-        <!-- Logo -->
-        <img
-          src="../assets/twitter-logo.png"
-          alt=""
-          style="width: 50px;"
-          class="logo"
-        />
-        <!-- search bar -->
-        <i class="fas fa-search" id="search-icon"></i>
-        <input type="text" class="input" placeholder=" Search twitter" />
-      </div>
-      <div class="right-part-nav">
-        <!-- sign up / log in buttons -->
-        <a class="button main bold" style="margin-right: 15px;">Log In</a>
-        <a class="button secondary bold" style="margin-right: 15px;">Sign Up</a>
-        <!-- Three dots buttons -->
-        <a class="button more"><span class="fas fa-ellipsis-h more"></span></a>
+      <div id="wrap">
+        <div class="left-part-nav">
+          <!-- Logo -->
+          <img
+            src="../assets/twitter-logo.png"
+            alt=""
+            style="width: 50px;"
+            class="logo"
+          />
+          <!-- search bar -->
+          <i class="fas fa-search" id="search-icon"></i>
+          <input type="text" class="input" placeholder=" Search twitter" />
+        </div>
+        <div class="right-part-nav">
+          <!-- sign up / log in buttons -->
+          <a
+            class="button main bold responsive-buttons"
+            style="margin-right: 15px;"
+            >Log In</a
+          >
+          <a
+            class="button secondary bold responsive-buttons"
+            style="margin-right: 15px;"
+            >Sign Up</a
+          >
+          <!-- Three dots buttons -->
+          <a class="button more"
+            ><span class="fas fa-ellipsis-h more"></span
+          ></a>
+        </div>
       </div>
     </nav>
     <!-- End of header -->
@@ -66,7 +78,14 @@
             <p class="font-big bold">Vlad.T</p>
             <p class="font-small">@vladt</p>
             <!-- hashtag -->
-            <p><a href="#">#what-i-like</a></p>
+            <p>
+              <a
+                href="#"
+                class="font-small"
+                style="padding-top: 10px; padding-bottom: 10px;"
+                >#what-i-like</a
+              >
+            </p>
             <div class="grey">
               <!-- Birth-day -->
               <p class="left padding-10">Born 24 June 1995</p>
@@ -100,6 +119,9 @@
               <div class="tweet-identifiers">
                 <p class="bold">Vlad.T</p>
                 <p class="grey">@vladt - 24 June 2020</p>
+                <i
+                  class="fas fa-chevron-down tweet-chevron font-small grey"
+                ></i>
               </div>
             </div>
             <p class="tweet-content">
@@ -152,15 +174,15 @@
             <!--name and tag-->
             <!--follow button-->
             <img
-              src="../assets/profile-pic.jpg"
+              src="../assets/gridimg6.jpg"
               alt=""
               class="follow-sudgestions-img"
             />
             <div>
-              <p>Name</p>
-              <p>@Name</p>
+              <p>Homer</p>
+              <p>@dufflover</p>
             </div>
-            <button class="button main follow-button">Follow</button>
+            <button class="button main follow-button relative">Follow</button>
           </li>
           <li>
             <img
@@ -169,8 +191,8 @@
               class="follow-sudgestions-img"
             />
             <div>
-              <p>Name</p>
-              <p>@Name</p>
+              <p>squarey</p>
+              <p>@squarey</p>
             </div>
             <button class="button main follow-button">Follow</button>
           </li>
@@ -181,8 +203,8 @@
               class="follow-sudgestions-img"
             />
             <div>
-              <p>Name</p>
-              <p>@Name</p>
+              <p>GoDog</p>
+              <p>@godog</p>
             </div>
             <button class="button main follow-button">Follow</button>
           </li>
