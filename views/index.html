@@ -7,6 +7,10 @@
       src="https://kit.fontawesome.com/ee2fbccbbc.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/main.css" />
     <title>Twitter - the clone</title>
   </head>
@@ -27,8 +31,8 @@
       </div>
       <div class="right-part-nav">
         <!-- sign up / log in buttons -->
-        <a class="button main" style="margin-right: 15px;">Log In</a>
-        <a class="button secondary" style="margin-right: 15px;">Sign Up</a>
+        <a class="button main bold" style="margin-right: 15px;">Log In</a>
+        <a class="button secondary bold" style="margin-right: 15px;">Sign Up</a>
         <!-- Three dots buttons -->
         <a class="button more"><span class="fas fa-ellipsis-h more"></span></a>
       </div>
@@ -57,24 +61,26 @@
             Follow
           </button>
           <!-- Profile details -->
-          <div class="profile-details" style="margin-top: 80px;">
+          <div class="profile-details" style="margin-top: 73px;">
             <!-- Name -->
-            <h5>Name</h5>
-            <p>@Name</p>
+            <p class="font-big bold">Vlad.T</p>
+            <p class="font-small">@vladt</p>
             <!-- hashtag -->
             <p><a href="#">#what-i-like</a></p>
-            <div>
+            <div class="grey">
               <!-- Birth-day -->
-              <p class="left padding-10">24 June 1995</p>
+              <p class="left padding-10">Born 24 June 1995</p>
               <!-- join-day -->
               <p>Joined 14 February 2020</p>
             </div>
-            <div>
-              <p class="left padding-10">Following: 2500</p>
-              <p>Followers: 1000</p>
+            <div class="follow-following">
+              <p class="left padding-10">
+                2,500 <span class="grey">Following</span>
+              </p>
+              <p>1,000 <span class="grey">Followers</span></p>
             </div>
             <div>
-              <ul class="profile-toggle">
+              <ul class="profile-toggle font-small bold grey">
                 <li class="active">Tweets</li>
                 <li>Tweets and Replies</li>
                 <li>Media</li>
@@ -92,9 +98,8 @@
             <div class="content">
               <img src="../assets/profile-pic.jpg" alt="profile picture" />
               <div class="tweet-identifiers">
-                <p>Name</p>
-                <p>@name</p>
-                <p>- 24 June 2020</p>
+                <p class="bold">Vlad.T</p>
+                <p class="grey">@vladt - 24 June 2020</p>
               </div>
             </div>
             <p class="tweet-content">
@@ -106,7 +111,7 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <ul>
+            <ul class="grey">
               <li><i class="far fa-comment"></i>246</li>
               <li><i class="fas fa-retweet"></i>6</li>
               <li><i class="far fa-heart"></i>24</li>
@@ -124,7 +129,9 @@
         <div class="signup-cta">
           <div>
             <h2>New to us?</h2>
-            <p>Sign up now to get your own personalized timeline!</p>
+            <p class="font-small grey">
+              Sign up now to get your own personalized timeline!
+            </p>
           </div>
           <button class="button secondary signup">Sign Up</button>
         </div>
@@ -144,36 +151,54 @@
             <!-- profile pic -->
             <!--name and tag-->
             <!--follow button-->
-            <img src="" alt="" />
-            <p>Name</p>
-            <p>@Name</p>
-            <button>Follow</button>
+            <img
+              src="../assets/profile-pic.jpg"
+              alt=""
+              class="follow-sudgestions-img"
+            />
+            <div>
+              <p>Name</p>
+              <p>@Name</p>
+            </div>
+            <button class="button main follow-button">Follow</button>
           </li>
           <li>
-            <img src="" alt="" />
-            <p>Name</p>
-            <p>@Name</p>
-            <button>Follow</button>
+            <img
+              src="../assets/gridimg5.jpg"
+              alt=""
+              class="follow-sudgestions-img"
+            />
+            <div>
+              <p>Name</p>
+              <p>@Name</p>
+            </div>
+            <button class="button main follow-button">Follow</button>
           </li>
           <li>
-            <img src="" alt="" />
-            <p>Name</p>
-            <p>@Name</p>
-            <button>Follow</button>
+            <img
+              src="../assets/gridimg3.png"
+              alt=""
+              class="follow-sudgestions-img"
+            />
+            <div>
+              <p>Name</p>
+              <p>@Name</p>
+            </div>
+            <button class="button main follow-button">Follow</button>
           </li>
           <li><a href="">Show more</a></li>
         </ul>
         <!-- Trends  -->
-        <div>
+        <div class="trends">
           <h2>Trends</h2>
         </div>
         <!-- Aside footer -->
-        <footer>
+        <footer class="font-small grey side-footer">
           <p>Terms</p>
           <p>Privacy policy</p>
           <p>Cookies</p>
           <p>Ads info</p>
-          <p>More ^</p>
+          <p>More <i class="fas fa-chevron-down"></i></p>
           <p>&copy; Twitter, Inc</p>
         </footer>
       </aside>
