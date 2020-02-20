@@ -11,6 +11,7 @@ body {
   --light-blue: #1aa4f1;
   --dark-slate-grey: #192734;
   --secondary-grey: #63727c;
+  --rgba-hover: rgb(131, 185, 217, 0.1);
   background-color: var(--main-blue-color);
   color: white;
   font-family: "Roboto", sans-serif;
@@ -63,6 +64,15 @@ ul {
 
 .grey {
   color: var(--secondary-grey);
+}
+
+.tweeet-buttons {
+  transition: 0.2 ease-out;
+}
+
+.tweeet-buttons li i:hover {
+  background-color: rgba(41, 241, 195, 0.1);
+  border-radius: 50%;
 }
 
 /* Font options end */
@@ -155,11 +165,11 @@ ul {
 .profile-toggle li {
   padding: 10px;
   width: 100%;
+  transition: 0.1s ease;
 }
 
 .profile-toggle li:hover {
-  background-color: var(--main-grey);
-  border-bottom: 2px solid var(--light-blue);
+  background-color: var(--rgba-hover);
   color: var(--light-blue);
 }
 
@@ -204,7 +214,6 @@ ul {
 /* main button style */
 .button {
   display: block;
-  /* color: ; */
   width: 90px;
   height: 20px;
   border: 1px solid var(--light-blue);
@@ -215,6 +224,14 @@ ul {
   margin-top: auto;
   margin-bottom: auto;
   font-weight: bold;
+}
+
+.button-hover {
+  transition: 0.3s ease;
+}
+
+.button-hover:hover {
+  background-color: var(--rgba-hover);
 }
 
 .main {
@@ -228,12 +245,10 @@ ul {
 }
 
 .logo {
-  /* position: absolute; */
   width: 100%;
   height: 30px;
   object-fit: contain;
-  /* top: 15px;
-  left: 130px; */
+
   margin-top: 15px;
 }
 
@@ -246,6 +261,8 @@ ul {
   display: flex;
   flex-direction: row;
 }
+
+/* Tweet styles start */
 
 .tweet {
   border: 1px solid var(--main-grey);
@@ -362,13 +379,9 @@ ul {
   position: relative;
   top: 50px;
   right: 170px;
-  /* border: 1px solid var(--main-grey); */
   border-radius: 15px;
   width: 290px;
   background-color: var(--dark-slate-grey);
-  /* display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(5, 50px); */
 }
 
 .follow-sudgestions-img {
@@ -454,8 +467,6 @@ ul {
 
   .header {
     height: 90px;
-    /* max-width: 1430px; */
-    /* min-width: 650px; */
   }
 
   .responsive-buttons {
@@ -467,6 +478,8 @@ ul {
     right: 88px;
     max-width: 960px;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
   }
 }
 
@@ -474,6 +487,8 @@ ul {
   #wrap {
     max-width: 600px;
     left: -38px;
+    align-content: center;
+    justify-content: center;
   }
   .left-part-nav {
     margin-left: 5px;
@@ -484,6 +499,8 @@ ul {
   #wrap {
     max-width: 400px;
     left: -110px;
+    align-content: center;
+    justify-content: center;
   }
   .left-part-nav {
     margin-left: -5px;
@@ -494,6 +511,8 @@ ul {
   #wrap {
     max-width: 400px;
     left: -80px;
+    align-content: center;
+    justify-content: center;
   }
   #wrap .left-part-nav {
     margin-left: -5px;
